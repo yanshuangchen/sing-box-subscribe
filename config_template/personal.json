@@ -69,8 +69,8 @@
                 "tag": "coldweb",
                 "type": "remote",
                 "format": "source",
-                "url": "https://srs.chaimi.cc/ai.srs",
-                "download_detour": "direct"
+                "url": "https://raw.githubusercontent.com/yanshuangchen/meta-rules-dat/refs/heads/sing/geo-lite/geosite/coldweb.json",
+                "download_detour": "proxy"
             },
             {
                 "tag": "direct",

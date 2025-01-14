@@ -66,18 +66,18 @@
                 "download_detour": "direct"
             },
             {
-                "tag": "coldweb",
-                "type": "remote",
-                "format": "source",
-                "url": "https://raw.githubusercontent.com/yanshuangchen/meta-rules-dat/refs/heads/sing/geo-lite/geosite/coldweb.json",
-                "download_detour": "proxy"
-            },
-            {
                 "tag": "direct",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://srs.chaimi.cc/direct.srs",
                 "download_detour": "direct"
+            },
+            {
+                "tag": "coldweb",
+                "type": "remote",
+                "format": "source",
+                "url": "https://raw.githubusercontent.com/yanshuangchen/meta-rules-dat/refs/heads/sing/geo-lite/geosite/coldweb.json",
+                "download_detour": "proxy"
             },
             {
                 "tag": "proxy",

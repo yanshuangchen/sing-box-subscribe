@@ -30,7 +30,8 @@
             {
                 "rule_set": [
                     "direct",
-                    "steam"
+                    "steam",
+                    "coldweb"
                 ],
                 "server": "ali-dns"
             },

@@ -58,17 +58,17 @@
     "route": {
         "rule_set": [
             {
-                "tag": "ai",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://srs.chaimi.cc/ai.srs",
-                "download_detour": "direct"
-            },
-            {
                 "tag": "block",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://srs.chaimi.cc/block.srs",
+                "download_detour": "direct"
+            },
+            {
+                "tag": "coldweb",
+                "type": "remote",
+                "format": "source",
+                "url": "https://srs.chaimi.cc/ai.srs",
                 "download_detour": "direct"
             },
             {
@@ -111,6 +111,7 @@
             },
             {
                 "rule_set": [
+                    "coldweb",
                     "direct",
                     "steam"
                 ],

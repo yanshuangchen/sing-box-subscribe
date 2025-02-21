@@ -58,13 +58,6 @@
     "route": {
         "rule_set": [
             {
-                "tag": "ai",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://srs.chaimi.cc/ai.srs",
-                "download_detour": "direct"
-            },
-            {
                 "tag": "block",
                 "type": "remote",
                 "format": "binary",

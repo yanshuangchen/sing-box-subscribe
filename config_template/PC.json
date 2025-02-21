@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "warn",
+    "level": "trace",
     "output": "box.log"
   },
   "dns": {

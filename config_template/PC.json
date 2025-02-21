@@ -70,9 +70,14 @@
       },
       {
         "rule_set": [
-          "direct",
-          "steam",
           "code"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "direct",
+          "steam"
         ],
         "outbound": "direct"
       },

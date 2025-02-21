@@ -35,6 +35,13 @@
         "download_detour": "direct"
       },
       {
+        "tag": "code",
+        "type": "remote",
+        "format": "source",
+        "url": "https://gist.githubusercontent.com/yanshuangchen/524f9382aa15bc6b456ff9beb5a06982/raw/71e05a4673d62bf51fe600c51fa06d6653b319b0/code.json",
+        "download_detour": "direct"
+      },
+      {
         "tag": "proxy",
         "type": "remote",
         "format": "binary",
@@ -64,7 +71,8 @@
       {
         "rule_set": [
           "direct",
-          "steam"
+          "steam",
+          "code"
         ],
         "outbound": "direct"
       },

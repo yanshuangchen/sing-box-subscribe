@@ -99,6 +99,13 @@
                 "format": "binary",
                 "url": "https://srs.chaimi.cc/steam.srs",
                 "download_detour": "direct"
+            },                       
+            {
+                "tag": "code",
+                "type": "remote",
+                "format": "source",
+                "url": "https://file.youlan.cc/code.json",
+                "download_detour": "direct"
             },
             {
                 "tag": "telegram",

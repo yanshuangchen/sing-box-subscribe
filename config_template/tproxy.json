@@ -131,7 +131,8 @@
             {
                 "rule_set": [
                     "direct",
-                    "steam"
+                    "steam",
+                    "code"
                 ],
                 "outbound": "direct"
             },

@@ -62,14 +62,14 @@
             "tag": "block",
             "type": "remote",
             "format": "binary",
-            "url": "https://file.youlan.cc/block.srs",
+            "url": "https://srs.chaimi.cc/block.srs",
             "download_detour": "direct"
         },
         {
             "tag": "direct",
             "type": "remote",
             "format": "binary",
-            "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+            "url": "https://srs.chaimi.cc/direct.srs",
             "download_detour": "direct"
         },
         {

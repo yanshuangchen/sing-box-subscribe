@@ -69,7 +69,7 @@
             "tag": "direct",
             "type": "remote",
             "format": "binary",
-            "url": "https://file.youlan.cc/direct.srs",
+            "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
             "download_detour": "direct"
         },
         {

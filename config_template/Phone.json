@@ -73,13 +73,6 @@
             "download_detour": "direct"
         },
         {
-            "tag": "code",
-            "type": "remote",
-            "format": "source",
-            "url": "https://file.youlan.cc/code.json",
-            "download_detour": "direct"
-        },
-        {
             "tag": "proxy",
             "type": "remote",
             "format": "binary",
@@ -110,7 +103,6 @@
             "rule_set": [
             "direct",
             "steam",
-            "code"
             ],
             "outbound": "direct"
         },

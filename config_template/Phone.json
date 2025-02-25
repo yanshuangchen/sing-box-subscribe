@@ -95,24 +95,28 @@
         }
         ],
         "rules": [
-        {
-            "rule_set": "block",
-            "action": "reject"
-        },
-        {
-            "rule_set": [
-            "direct",
-            "steam"
-            ],
-            "outbound": "direct"
-        },
-        {
-            "rule_set": [
-            "telegram",
-            "proxy"
-            ],
-            "outbound": "proxy"
-        }
+            {
+                "port": 53,
+                "action": "hijack-dns"
+            },
+            {
+                "rule_set": "block",
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "direct",
+                    "steam"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "rule_set": [
+                    "telegram",
+                    "proxy"
+                ],
+                "outbound": "proxy"
+            }
         ],
         "final": "final",
         "auto_detect_interface": true

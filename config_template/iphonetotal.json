@@ -30,7 +30,7 @@
             {
                 "rule_set": [
                     "direct",
-                    "code"
+                    "coldweb"
                 ],
                 "server": "ali-dns"
             },
@@ -44,10 +44,7 @@
                     "A",
                     "AAAA"
                 ],
-                "rule_set": [
-                    "proxy",
-                    "geosite-telegram"
-                ],
+                "rule_set": "proxy",
                 "server": "fakeip"
             }
         ],
@@ -61,7 +58,7 @@
     "route": {
         "rule_set": [
             {
-                "tag": "code",
+                "tag": "coldweb",
                 "type": "remote",
                 "format": "source",
                 "url": "https://file.youlan.cc/code.json",
@@ -262,7 +259,7 @@
             {
                 "rule_set": [
                     "direct",
-                    "code",
+                    "coldweb",
                     "geosite-geolocation-cn"
                 ],
                 "outbound": "direct"
@@ -274,10 +271,6 @@
             {
                 "rule_set": ["geosite-youtube", "geosite-google", "geosite-github"],
                 "outbound": "Google"
-            },
-            {
-                "rule_set": "geosite-telegram",
-                "outbound": "Telegram"
             },
             {
                 "rule_set": "geosite-twitter",
@@ -394,18 +387,6 @@
           },
         {
             "tag":"Google",
-            "type":"selector",
-            "outbounds":[
-                "HongKong",
-                "TaiWan",
-                "Singapore",
-                "Japan",
-                "America",
-                "Others"
-            ]
-        },
-        {
-            "tag":"Telegram",
             "type":"selector",
             "outbounds":[
                 "HongKong",

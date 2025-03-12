@@ -433,7 +433,7 @@
             "tag":"BiliBili",
             "type":"selector",
             "outbounds":[
-                "direct",
+                "direct-out",
                 "HongKong",
                 "TaiWan"
             ]
@@ -443,7 +443,7 @@
             "type":"selector",
             "outbounds":[
                 "TaiWan",
-                "Proxy"
+                "proxy"
             ]
         },
         {
@@ -499,7 +499,7 @@
             "tag":"Apple",
             "type":"selector",
             "outbounds":[
-                "direct",
+                "direct-out",
                 "HongKong",
                 "TaiWan",
                 "Singapore",
@@ -512,7 +512,7 @@
             "tag":"Microsoft",
             "type":"selector",
             "outbounds":[
-                "direct",
+                "direct-out",
                 "HongKong",
                 "TaiWan",
                 "Singapore",
@@ -525,7 +525,7 @@
             "tag":"Games",
             "type":"selector",
             "outbounds":[
-                "direct",
+                "direct-out",
                 "HongKong",
                 "TaiWan",
                 "Singapore",

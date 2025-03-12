@@ -24,7 +24,7 @@
                 "server": "ali-dns"
             },
             {
-                "rule_set": "block",
+                "rule_set": "geosite-category-ads-all",
                 "server": "block-dns"
             },
             {

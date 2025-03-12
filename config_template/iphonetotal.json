@@ -30,7 +30,7 @@
             {
                 "rule_set": [
                     "direct",
-                    "steam"
+                    "code"
                 ],
                 "server": "ali-dns"
             },

@@ -233,6 +233,13 @@
                 "download_detour": "direct"
             },
             {
+                "tag": "geosite-geolocation-cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-cn.srs",
+                "download_detour": "direct"
+            },
+            {
                 "tag": "geosite-cn",
                 "type": "remote",
                 "format": "binary",
@@ -252,7 +259,8 @@
             {
                 "rule_set": [
                     "direct",
-                    "code"
+                    "code",
+                    "geosite-geolocation-cn"
                 ],
                 "outbound": "direct"
             },

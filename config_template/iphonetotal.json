@@ -281,10 +281,6 @@
                 "outbound": "BiliBili"
             },
             {
-                "rule_set": "geosite-bahamut",
-                "outbound": "Bahamut"
-            },
-            {
                 "rule_set": "geosite-spotify",
                 "outbound": "Spotify"
             },

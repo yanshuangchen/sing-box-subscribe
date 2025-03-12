@@ -120,7 +120,7 @@
                 "tag": "geosite-telegram",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
+                "url": "https://raw.githubusercontent.com/Toperlock/sing-box-geosite/refs/heads/main/rule/Telegram.json",
                 "download_detour": "direct"
             },
             {

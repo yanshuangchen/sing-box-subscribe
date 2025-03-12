@@ -44,7 +44,10 @@
                     "A",
                     "AAAA"
                 ],
-                "rule_set": "proxy",
+                "rule_set": [
+                    "proxy",
+                    "geosite-telegram"
+                ],
                 "server": "fakeip"
             }
         ],

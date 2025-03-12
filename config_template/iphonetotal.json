@@ -30,7 +30,7 @@
             {
                 "rule_set": [
                     "direct",
-                    "coldweb"
+                    "code"
                 ],
                 "server": "ali-dns"
             },
@@ -44,7 +44,10 @@
                     "A",
                     "AAAA"
                 ],
-                "rule_set": "proxy",
+                "rule_set": [
+                    "proxy",
+                    "geosite-telegram"
+                ],
                 "server": "fakeip"
             }
         ],
@@ -58,7 +61,7 @@
     "route": {
         "rule_set": [
             {
-                "tag": "coldweb",
+                "tag": "code",
                 "type": "remote",
                 "format": "source",
                 "url": "https://file.youlan.cc/code.json",
@@ -259,14 +262,10 @@
             {
                 "rule_set": [
                     "direct",
-                    "coldweb",
+                    "code",
                     "geosite-geolocation-cn"
                 ],
                 "outbound": "direct"
-            },
-            {
-                "rule_set": "geosite-telegram",
-                "outbound": "proxy"
             },
             {
                 "rule_set": "geosite-openai",
@@ -275,6 +274,10 @@
             {
                 "rule_set": ["geosite-youtube", "geosite-google", "geosite-github"],
                 "outbound": "Google"
+            },
+            {
+                "rule_set": "geosite-telegram",
+                "outbound": "Telegram"
             },
             {
                 "rule_set": "geosite-twitter",
@@ -391,6 +394,18 @@
           },
         {
             "tag":"Google",
+            "type":"selector",
+            "outbounds":[
+                "HongKong",
+                "TaiWan",
+                "Singapore",
+                "Japan",
+                "America",
+                "Others"
+            ]
+        },
+        {
+            "tag":"Telegram",
             "type":"selector",
             "outbounds":[
                 "HongKong",

@@ -265,6 +265,10 @@
                 "outbound": "direct"
             },
             {
+                "rule_set": "geosite-telegram",
+                "outbound": "proxy"
+            },
+            {
                 "rule_set": "geosite-openai",
                 "outbound": "OpenAI"
             },

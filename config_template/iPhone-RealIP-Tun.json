@@ -361,72 +361,10 @@
       },
       {
         "rule_set": [
-          "geosite-youtube",
-          "geoip-google",
-          "geosite-google",
-          "geosite-github"
-        ],
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": [
-          "geoip-telegram",
-          "geosite-telegram"
-        ],
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": [
-          "geoip-twitter",
-          "geosite-twitter"
-        ],
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": [
-          "geoip-facebook",
-          "geosite-facebook"
-        ],
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": "geosite-bilibili",
-        "outbound": "China"
-      },
-      {
-        "rule_set": "geosite-bahamut",
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": "geosite-spotify",
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": "geosite-tiktok",
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": [
           "geoip-netflix",
           "geosite-netflix"
         ],
         "outbound": "Netflix"
-      },
-      {
-        "rule_set": "geosite-disney",
-        "outbound": "Proxy"
-      },
-      {
-        "rule_set": [
-          "geoip-apple",
-          "geosite-apple",
-          "geosite-amazon"
-        ],
-        "outbound": "Direct"
-      },
-      {
-        "rule_set": "geosite-microsoft",
-        "outbound": "Direct"
       },
       {
         "rule_set": [
@@ -437,6 +375,20 @@
       },
       {
         "rule_set": [
+          "geosite-youtube",
+          "geoip-google",
+          "geosite-google",
+          "geosite-github",
+          "geoip-telegram",
+          "geosite-telegram",
+          "geoip-twitter",
+          "geosite-twitter",
+          "geoip-facebook",
+          "geosite-facebook",
+          "geosite-bahamut",
+          "geosite-spotify",
+          "geosite-tiktok",
+          "geosite-disney",
           "geosite-hbo",
           "geosite-primevideo"
         ],
@@ -449,7 +401,12 @@
       {
         "rule_set": [
           "geoip-cn",
-          "geosite-cn"
+          "geosite-cn",
+          "geoip-apple",
+          "geosite-apple",
+          "geosite-amazon",
+          "geosite-microsoft",
+          "geosite-bilibili"
         ],
         "outbound": "China"
       }

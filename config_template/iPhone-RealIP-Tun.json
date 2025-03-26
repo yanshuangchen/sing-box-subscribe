@@ -356,15 +356,6 @@
         "outbound": "direct"
       },
       {
-        "rule_set": [
-          "geoip-apple",
-          "geosite-apple",
-          "geosite-amazon",
-          "geosite-microsoft"
-        ],
-        "outbound": "China"
-      },
-      {
         "rule_set": "geosite-openai",
         "outbound": "OpenAI"
       },
@@ -374,6 +365,15 @@
           "geosite-netflix"
         ],
         "outbound": "Netflix"
+      },
+      {
+        "rule_set": [
+          "geoip-apple",
+          "geosite-apple",
+          "geosite-amazon",
+          "geosite-microsoft"
+        ],
+        "outbound": "China"
       },
       {
         "rule_set": [

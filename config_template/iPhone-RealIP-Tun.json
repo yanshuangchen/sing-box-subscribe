@@ -343,7 +343,9 @@
     },
     {
       "tag": "Singapore",
-      "type": "selector",
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
       "outbounds": [
         "{all}"
       ],
@@ -358,7 +360,9 @@
     },
     {
       "tag": "Japan",
-      "type": "selector",
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
       "outbounds": [
         "{all}"
       ],
@@ -373,7 +377,9 @@
     },
     {
       "tag": "America",
-      "type": "selector",
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
       "outbounds": [
         "{all}"
       ],

@@ -97,7 +97,22 @@
       "outbounds": [
         "auto",
         "direct",
-        "{all}"
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Final",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "direct",
+        "Proxy",
+        "HongKong"
       ]
     },
     {
@@ -113,140 +128,9 @@
       "default": "America"
     },
     {
-      "tag": "Google",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others",
-        "auto"
-      ]
-    },
-    {
-      "tag": "Telegram",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others",
-        "auto"
-      ]
-    },
-    {
-      "tag": "Twitter",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others",
-        "auto"
-      ]
-    },
-    {
-      "tag": "Facebook",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "BiliBili",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan"
-      ]
-    },
-    {
-      "tag": "Bahamut",
-      "type": "selector",
-      "outbounds": [
-        "TaiWan",
-        "Proxy"
-      ]
-    },
-    {
-      "tag": "Spotify",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "America"
-    },
-    {
-      "tag": "TikTok",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America"
-      ],
-      "default": "Japan"
-    },
-    {
       "tag": "Netflix",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Disney+",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Apple",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Microsoft",
-      "type": "selector",
-      "outbounds": [
-        "direct",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -260,18 +144,6 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag": "Streaming",
-      "type": "selector",
-      "outbounds": [
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -443,7 +315,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "Proxy",
+    "final": "Final",
     "rules": [
       {
         "type": "logical",
@@ -494,44 +366,44 @@
           "geosite-google",
           "geosite-github"
         ],
-        "outbound": "Google"
+        "outbound": "Proxy"
       },
       {
         "rule_set": [
           "geoip-telegram",
           "geosite-telegram"
         ],
-        "outbound": "Telegram"
+        "outbound": "Proxy"
       },
       {
         "rule_set": [
           "geoip-twitter",
           "geosite-twitter"
         ],
-        "outbound": "Twitter"
+        "outbound": "Proxy"
       },
       {
         "rule_set": [
           "geoip-facebook",
           "geosite-facebook"
         ],
-        "outbound": "Facebook"
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-bilibili",
-        "outbound": "BiliBili"
+        "outbound": "China"
       },
       {
         "rule_set": "geosite-bahamut",
-        "outbound": "Bahamut"
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-spotify",
-        "outbound": "Spotify"
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-tiktok",
-        "outbound": "TikTok"
+        "outbound": "Proxy"
       },
       {
         "rule_set": [
@@ -542,7 +414,7 @@
       },
       {
         "rule_set": "geosite-disney",
-        "outbound": "Disney+"
+        "outbound": "Proxy"
       },
       {
         "rule_set": [
@@ -550,11 +422,11 @@
           "geosite-apple",
           "geosite-amazon"
         ],
-        "outbound": "Apple"
+        "outbound": "Direct"
       },
       {
         "rule_set": "geosite-microsoft",
-        "outbound": "Microsoft"
+        "outbound": "Direct"
       },
       {
         "rule_set": [
@@ -568,7 +440,7 @@
           "geosite-hbo",
           "geosite-primevideo"
         ],
-        "outbound": "Streaming"
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-geolocation-!cn",

@@ -98,7 +98,7 @@
   ],
   "outbounds": [
     {
-      "tag": "Proxy",
+      "tag": "proxy",
       "type": "selector",
       "outbounds": [
         "auto",
@@ -117,7 +117,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "Proxy",
+        "proxy",
         "HongKong"
       ]
     },
@@ -176,7 +176,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "Proxy"
+        "proxy"
       ]
     },
     {
@@ -361,7 +361,7 @@
       },
       {
         "rule_set": "geosite-github",
-        "outbound": "Proxy"
+        "outbound": "proxy"
       },
       {
         "rule_set": [
@@ -404,7 +404,7 @@
           "geosite-hbo",
           "geosite-primevideo"
         ],
-        "outbound": "Proxy"
+        "outbound": "proxy"
       },
       {
         "rule_set": "geosite-geolocation-!cn",

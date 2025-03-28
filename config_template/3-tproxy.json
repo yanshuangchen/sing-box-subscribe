@@ -221,7 +221,12 @@
             "outbounds": [
                 "auto",
                 "direct-out",
-                "{all}"
+                "HongKong",
+                "TaiWan",
+                "Singapore",
+                "Japan",
+                "America",
+                "Others"
             ]
         },
         {
@@ -230,8 +235,7 @@
             "outbounds": [
                 "auto",
                 "direct-out",
-                "Japan",
-                "{all}"
+                "Japan"
             ]
         },
         {

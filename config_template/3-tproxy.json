@@ -50,6 +50,10 @@
                 "server": "fakeip"
             },
             {
+                "rule_set": "geosite-openai",
+                "server": "fakeip"
+            },
+            {
                 "action": "route-options",
                 "query_type": "AAAA",
                 "client_subnet": "223.167.89.93/24",
@@ -66,10 +70,10 @@
     "route": {
         "rule_set": [
             {
-                "tag": "ai",
+                "tag": "geosite-openai",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://srs.chaimi.cc/ai.srs",
+                "url": "https://ghproxy.cn/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/OpenAI.srs",
                 "download_detour": "direct"
             },
             {
@@ -127,6 +131,10 @@
                     "steam"
                 ],
                 "outbound": "direct"
+            },
+            {
+                "rule_set": "geosite-openai",
+                "outbound": "OpenAI"
             },
             {
                 "rule_set": [
@@ -192,6 +200,16 @@
             ]
         },
         {
+            "tag": "OpenAI",
+            "type": "selector",
+            "outbounds": [
+                "auto",
+                "direct-out",
+                "Japan",
+                "{all}"
+            ]
+        },
+        {
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
@@ -239,7 +257,7 @@
                 {
                     "action": "include",
                     "keywords": [
-                        "🇭🇰|HK|hk|香港|港|HongKong"
+                        "🇭🇰|HK|hk|香港 | 港|HongKong"
                     ]
                 }
             ]
@@ -254,7 +272,7 @@
                 {
                     "action": "include",
                     "keywords": [
-                        "🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"
+                        "🇹🇼|TW|tw|台湾 | 臺灣 | 台|Taiwan"
                     ]
                 }
             ]
@@ -269,7 +287,7 @@
                 {
                     "action": "include",
                     "keywords": [
-                        "🇸🇬|SG|sg|新加坡|狮|Singapore"
+                        "🇸🇬|SG|sg|新加坡 | 狮|Singapore"
                     ]
                 }
             ]
@@ -284,7 +302,7 @@
                 {
                     "action": "include",
                     "keywords": [
-                        "🇯🇵|JP|jp|日本|日|Japan"
+                        "🇯🇵|JP|jp|日本 | 日|Japan"
                     ]
                 }
             ]
@@ -299,7 +317,7 @@
                 {
                     "action": "include",
                     "keywords": [
-                        "🇺🇸|US|us|美国|美|United States"
+                        "🇺🇸|US|us|美国 | 美|United States"
                     ]
                 }
             ]
@@ -314,7 +332,7 @@
                 {
                     "action": "exclude",
                     "keywords": [
-                        "🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美"
+                        "🇭🇰|HK|hk|香港 | 香|🇹🇼|TW|tw|台湾 | 台|🇸🇬|SG|sg|新加坡 | 狮|🇯🇵|JP|jp|日本 | 日|🇺🇸|US|us|美国 | 美"
                     ]
                 }
             ]

@@ -152,6 +152,13 @@
                 "outbound": "direct"
             },
             {
+                "domain_suffix": [
+                    ".cn",
+                    ".m-team.cc"
+                ],
+                "outbound": "direct"
+            },
+            {
                 "rule_set": [
                     "direct",
                     "steam"

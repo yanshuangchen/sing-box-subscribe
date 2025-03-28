@@ -50,7 +50,10 @@
                 "server": "fakeip"
             },
             {
-                "rule_set": "geosite-openai",
+                "rule_set": [
+                    "geosite-openai",
+                    "geosite-github"
+                ],
                 "server": "fakeip"
             },
             {
@@ -69,6 +72,13 @@
     },
     "route": {
         "rule_set": [
+            {
+                "tag": "geosite-github",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+                "download_detour": "direct"
+            },
             {
                 "tag": "geosite-openai",
                 "type": "remote",
@@ -126,6 +136,17 @@
                 "outbound": "direct-out"
             },
             {
+                "domain": [
+                    "clash.razord.top",
+                    "yacd.metacubex.one",
+                    "yacd.haishan.me",
+                    "d.metacubex.one",
+                    "jellyfin.youlan.cc",
+                    "sb.youlan.cc"
+                ],
+                "outbound": "direct"
+            },
+            {
                 "rule_set": [
                     "direct",
                     "steam"
@@ -135,6 +156,10 @@
             {
                 "rule_set": "geosite-openai",
                 "outbound": "OpenAI"
+            },
+            {
+                "rule_set": "geosite-github",
+                "outbound": "auto"
             },
             {
                 "rule_set": [
@@ -249,7 +274,10 @@
         },
         {
             "tag": "HongKong",
-            "type": "selector",
+            "type": "urltest",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "10m",
+            "tolerance": 50,
             "outbounds": [
                 "{all}"
             ],
@@ -264,7 +292,9 @@
         },
         {
             "tag": "TaiWan",
-            "type": "selector",
+            "type": "urltest",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "10m",
             "outbounds": [
                 "{all}"
             ],
@@ -279,7 +309,9 @@
         },
         {
             "tag": "Singapore",
-            "type": "selector",
+            "type": "urltest",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "10m",
             "outbounds": [
                 "{all}"
             ],
@@ -294,7 +326,9 @@
         },
         {
             "tag": "Japan",
-            "type": "selector",
+            "type": "urltest",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "10m",
             "outbounds": [
                 "{all}"
             ],
@@ -309,7 +343,9 @@
         },
         {
             "tag": "America",
-            "type": "selector",
+            "type": "urltest",
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "10m",
             "outbounds": [
                 "{all}"
             ],

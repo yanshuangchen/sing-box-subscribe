@@ -159,6 +159,13 @@
                 "outbound": "direct"
             },
             {
+                "domain_keyword": [
+                    "speedtest",
+                    "hdsky"
+                ],
+                "outbound": "direct"
+            },
+            {
                 "rule_set": [
                     "direct",
                     "steam"
@@ -261,7 +268,8 @@
             "outbounds": [
                 "auto",
                 "direct-out",
-                "Japan"
+                "Japan",
+                "America"
             ]
         },
         {

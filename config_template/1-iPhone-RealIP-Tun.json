@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   },
   "experimental": {
@@ -348,6 +348,14 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          ".cn",
+          ".m-team.cc",
+          ".youlan.cc"
         ],
         "outbound": "direct"
       },
